@@ -1,0 +1,10 @@
+{
+  "name": "nimbo-components",
+  "version": "0.0.1",
+  "description": "Componentes de UI do nimbo",
+  "main": "index.js",
+  "repository": "git@github.com:Nimbo1999/nimbo-components.git",
+  "author": "Matheus de Oliveira Lopes <matlopes1999@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
