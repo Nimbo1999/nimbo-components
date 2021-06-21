@@ -1,7 +1,6 @@
-import React, { FC, StrictMode } from 'react';
+import { StrictMode } from 'react';
 import ReactDom from 'react-dom';
-
-const App: FC = () => <span>Hello world</span>;
+import App from './App';
 
 ReactDom.render(
     <StrictMode>
