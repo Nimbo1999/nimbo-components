@@ -8,12 +8,12 @@ module.exports = merge(common, {
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, '..', 'dist'),
     },
     plugins: [
         new htmlWebpackPlugin({
             minify: true,
-            template: path.join(__dirname, 'public', 'index.html'),
+            template: path.join(__dirname, '..', 'public', 'index.html'),
             inject: true
         }),
     ]
