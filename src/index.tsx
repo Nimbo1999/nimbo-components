@@ -4,9 +4,11 @@ import App from './App';
 
 import './assets/css/main.less';
 
-ReactDom.render(
-    <StrictMode>
-        <App />
-    </StrictMode>,
-    document.getElementById('root')
-);
+if (process.env.NODE_ENV === 'development') {
+    ReactDom.render(
+        <StrictMode>
+            <App />
+        </StrictMode>,
+        document.getElementById('root')
+    );
+}
