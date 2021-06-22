@@ -1,22 +1,23 @@
 import { FC } from 'react';
+import { Text } from './components/typografy';
 
 const App: FC = () => <div className="app-container">
     <nav>
         <div>
             <h3>General</h3>
 
-            <span>Typografy</span>
-            <span>Colors</span>
-            <span>Spacing</span>
-            <span>Grid</span>
+            <Text>Typografy</Text>
+            <Text>Colors</Text>
+            <Text>Spacing</Text>
+            <Text>Grid</Text>
         </div>
 
         <div>
             <h3>Components</h3>
-            <span>Input</span>
-            <span>Checkboxes</span>
-            <span>Radios</span>
-            <span>Textareas</span>
+            <Text>Input</Text>
+            <Text>Checkboxes</Text>
+            <Text>Radios</Text>
+            <Text>Textareas</Text>
         </div>
     </nav>
 </div>;
