@@ -9,7 +9,8 @@
   "private": false,
   "scripts": {
     "start": "webpack serve --open --config ./webpack/webpack.dev.js --port 80",
-    "build": "webpack --config ./webpack/webpack.prod.js"
+    "build": "webpack --config ./webpack/webpack.prod.js",
+    "publish:lib": "rm -rf ./dist && npm run build && npm publish"
   },
   "keywords": [
     "UI",

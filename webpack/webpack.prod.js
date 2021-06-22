@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(common, {
     mode: 'production',
+    entry: './index.prod.tsx',
     plugins: [new MiniCssExtractPlugin()],
     module: {
         rules: [

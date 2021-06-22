@@ -2,4 +2,8 @@
 /node_modules/
 
 # Production build
-/dist/
+dist/
+
+# Yarn packages
+
+yarn-error.log

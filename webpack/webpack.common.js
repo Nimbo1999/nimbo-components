@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
     context: path.join(__dirname, '..', 'src'),
-    entry: './index.tsx',
     output: {
         filename: '[name].[contenthash].bundle.js',
         clean: true,
