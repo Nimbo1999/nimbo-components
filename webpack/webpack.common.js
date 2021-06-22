@@ -19,25 +19,6 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: 'babel-loader',
-            },
-            {
-                test: /\.less$/i,
-                use: [
-                    "style-loader",
-                    {
-                        loader: "css-loader",
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    "postcss-loader",
-                    {
-                        loader: "less-loader",
-                        options: {
-                            sourceMap: true
-                        }
-                    }
-                ]
             }
         ],
     },

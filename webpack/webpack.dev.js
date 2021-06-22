@@ -16,5 +16,28 @@ module.exports = merge(common, {
             template: path.join(__dirname, '..', 'public', 'index.html'),
             inject: true
         }),
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.less$/i,
+                use: [
+                    "style-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    "postcss-loader",
+                    {
+                        loader: "less-loader",
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
 })
