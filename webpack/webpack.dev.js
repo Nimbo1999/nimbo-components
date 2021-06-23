@@ -6,8 +6,8 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
     mode: 'development',
-    entry: './index.dev.tsx',
-    devtool: 'inline-source-map',
+    entry: './index.tsx',
+    devtool: 'source-map',
     devServer: {
         contentBase: path.join(__dirname, '..', 'dist'),
     },
@@ -20,6 +20,21 @@ module.exports = merge(common, {
     ],
     module: {
         rules: [
+            {
+                test: /\.(ts|tsx)$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                    },
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            transpileOnly: true
+                        }
+                    }
+                ],
+            },
             {
                 test: /\.less$/i,
                 use: [

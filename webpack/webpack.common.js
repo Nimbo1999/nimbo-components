@@ -3,17 +3,13 @@ const path = require('path');
 module.exports = {
     context: path.join(__dirname, '..', 'src'),
     output: {
-        filename: '[name].[contenthash].bundle.js',
-        clean: true,
-        path: path.resolve(__dirname, '..', 'dist')
+        filename: 'index.js',
+        path: path.resolve(__dirname, '..', 'dist'),
+        publicPath: '/dist/'
     },
+    target: 'web',
     module: {
         rules: [
-            {
-                test: /\.(ts|tsx)$/,
-                exclude: /node_modules/,
-                use: 'ts-loader',
-            },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
