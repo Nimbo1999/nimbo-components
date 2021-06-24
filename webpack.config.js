@@ -17,8 +17,10 @@ module.exports = function(env, argv) {
             path: path.join(__dirname, 'dist'),
             publicPath: '/',
             clean: true,
+            library: 'nimbo-components',
+            libraryTarget: 'commonjs2',
         },
-        target: ['node', 'es5'],
+        target: 'node',
         plugins: [],
         module: {
             rules: [

@@ -1,5 +1,6 @@
 # NPM packages
 /node_modules/
+example/node_modules/
 
 # Production build
 dist/
@@ -7,3 +8,5 @@ dist/
 # Yarn packages
 
 yarn-error.log
+
+*.tgz
