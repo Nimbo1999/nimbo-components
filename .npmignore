@@ -1,7 +1,0 @@
-src/
-public/
-webpack/
-.babelrc
-.gitignore
-postcss.config.js
-yarn-error.log
