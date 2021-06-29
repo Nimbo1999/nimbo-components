@@ -1,12 +1,14 @@
-import Text from 'nimbo-components';
+import { Text, GlobalStyle } from 'nimbo-components';
 
 function App() {
-  console.log(Text);
-
   return (
-    <div className="App">
-      oi
-    </div>
+    <>
+      <GlobalStyle/>
+
+      <Text>
+        oi
+      </Text>
+    </>
   );
 }
 

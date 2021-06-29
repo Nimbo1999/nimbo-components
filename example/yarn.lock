@@ -7334,13 +7334,6 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-nimbo-components@../nimbo-components-v0.0.5.tgz:
-  version "0.0.5"
-  resolved "../nimbo-components-v0.0.5.tgz#42c1dfb589f0fa32af2080c4d03d0923b9b34dad"
-  dependencies:
-    react "^17.0.2"
-    react-dom "^17.0.2"
-
 no-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-3.0.4.tgz#d361fd5c9800f558551a8369fc0dcd4662b6124d"

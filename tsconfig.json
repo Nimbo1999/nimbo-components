@@ -20,6 +20,5 @@
     "suppressImplicitAnyIndexErrors": true,
     "isolatedModules": true,
     "strict": true,
-    "baseUrl": "./src"
   }
 }

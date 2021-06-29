@@ -9,7 +9,9 @@ export const Text: FC<HTMLProps<HTMLSpanElement>> = ({
 
     if (className) classes.push(className);
 
-    return <span {...spanProps} className={ classes.join(' ') }>
-        this is the content: {children}
-    </span>
+    return (
+        <span {...spanProps} className={ classes.join(' ') }>
+            this is the content: {children}
+        </span>
+    );
 }
