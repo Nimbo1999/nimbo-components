@@ -3,9 +3,9 @@
   "title": "Nimbo Components",
   "version": "0.0.5",
   "description": "Componentes de UI do nimbo",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "repository": "git@github.com:Nimbo1999/nimbo-components.git",
   "author": "Matheus de Oliveira Lopes <matlopes1999@gmail.com>",
   "license": "MIT",
@@ -14,44 +14,35 @@
     "dist"
   ],
   "scripts": {
-    "start": "webpack serve --open --port 3000",
-    "build": "webpack",
-    "build:new": "yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build": "tsc -p ./tsconfig.esm.json && tsc -p ./tsconfig.cjs.json",
     "publish:lib": "rm -rf ./dist && npm run build && npm publish"
   },
   "keywords": [
     "UI",
     "React Components",
     "Components",
-    "UI Framework",
-    "Inputs"
+    "UI Framework"
   ],
   "peerDependencies": {
-    "react": "17.x",
-    "react-dom": "17.x"
-  },
-  "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
+  "dependencies": {},
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
-    "css-loader": "^5.2.6",
-    "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",
-    "less-loader": "^10.0.0",
-    "mini-css-extract-plugin": "^1.6.0",
     "postcss": "^8.3.5",
-    "postcss-loader": "^6.1.0",
-    "postcss-preset-env": "^6.7.0",
-    "style-loader": "^2.0.0",
-    "ts-loader": "^9.2.3",
-    "typescript": "^4.3.4",
-    "webpack": "~5.39.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "rollup": "^2.52.3",
+    "rollup-plugin-less": "^1.1.3",
+    "rollup-plugin-less-modules": "^0.1.11",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-visualizer": "^5.5.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
   }
 }
